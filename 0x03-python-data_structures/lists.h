@@ -11,3 +11,16 @@ def max_integer(my_list=[]):
 def divisible_by_2(my_list=[]):
 def delete_at(my_list=[], idx=0):
 int is_palindrome(listint_t **head);
+
+typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+} listint_t;
+
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+
+void reverse_listint(listint_t **head);
+int is_palindrome(listint_t **head);
